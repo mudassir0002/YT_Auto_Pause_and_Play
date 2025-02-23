@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>YT Auto Pause and Play Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>YT Auto Pause and Play Settings</h2>
+  <form id="settingsForm">
+    <label>
+      <input type="checkbox" id="autoPauseOnTabUnfocus">
+      Auto pause on tab unfocus
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="autoResumeOnTabFocus">
+      Auto resume on tab focus
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="autoPauseOnWindowUnfocus">
+      Auto pause on window unfocus
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="autoResumeOnWindowFocus">
+      Auto resume on window focus
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" id="disableExtension">
+      Disable on this tab
+    </label>
+    <br>
+    <button type="submit">Save Settings</button>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>

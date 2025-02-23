@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "YT Auto Pause and Play",
+  "version": "1.0",
+  "description": "Automatically pauses and resumes YouTube videos based on tab and window focus, created by Mudassir GitHub Acc mudassir0002.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
